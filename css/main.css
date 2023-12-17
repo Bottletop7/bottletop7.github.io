@@ -1,0 +1,118 @@
+/* 
+The following CSS makes sure that the html page takes up all the browser
+window.
+*/
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+/*
+Give the header a background image and a 15 pixel padding.
+*/
+header {
+    background-color: #9933cc;
+    background-image: URL("https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+}
+
+/* Make the header image smaller */
+header img {
+    width: 15%;
+}
+
+/* Make the h1 text in the header white */
+header h1 {
+    color: #ffffff;
+}
+
+/*
+This was taken from https://www.w3schools.com/css/css_navbar_horizontal.asp
+
+First the bullet points from the unordered list by setting the list-style-type to none.
+Then set the margin and padding for the list to be 0. Set the height of the list to 45
+pixels.
+
+*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    background-color: #333;
+}
+
+/*
+Now get the list items to stack to the left
+*/
+nav li {
+    float: left;
+}
+
+/*
+Set each anchor (link) to display like a block. By default they display like text but
+making them display as a block (like a box) means we set padding.
+*/
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #111;
+}
+
+/*
+This is the class where all the page content is going to go. It is set to be 90% of the
+width of the browser page. Setting the left and right margins to auto makes the browser
+give an equal margin on both sides.
+*/
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+The following class centers text
+*/
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+The following class is on the word count table on the index.html page. I set the
+width to 66% (two-thirds of the page width) and centered it on the page by setting the
+left and right margin to auto.
+*/
+table.wordCountTable {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+Set the border of td's (table data) and th's (table header).
+*/
+table.wordCountTable td,
+table.wordCountTable th {
+    border: 1px solid black;
+}
+
+/* Set the background colour of th's */
+table.wordCountTable th {
+    background-color: bisque;
+}
