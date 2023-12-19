@@ -17,7 +17,7 @@ Give the header a background image and a 15 pixel padding.
 */
 header {
     background-color: #9933cc;
-    background-image: URL("header-background.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1");
+    background-image: URL("/images/header-background.jpg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15px;
